@@ -6,14 +6,14 @@ from openpyxl.utils.dataframe import dataframe_to_rows
 
 # ------------------ KONFIGURASI JENIS ------------------
 JENIS_POHON = {
-    "Kelompok Meranti": ["KENARI", "NYATOH", "PULAI", "MERSAWA", "RESAK", "MATOA", "MERAWAN", "PENJALIN"],
+    "Kelompok Meranti": ["Kenari", "Nyatoh", "Pulai", "Mersawa", "Resak", "Matoa", "Merawan", "Penjalin"],
     "Kelompok Rimba Campuran": [
-        "BENUANG", "TERENTANG", "KETAPANG", "JAMBU - JAMBU", "KEDONDONG HUTAN", "SESENDOK",
-        "MENDARAHAN", "BINTANGUR", "TERAP", "BUGIS", "BIPA", "DUABANGA", "LANCAT", "KENANGA",
-        "MEMPISANG", "SENGON", "SURIAN", "TENGGAYUN", "MEDANG", "JABON", "PELAWAN", "KAYU BATU",
-        "LARA", "SIMPUR", "LASI", "MAHANG", "GOPASA"
+        "Benuang", "Terentang", "Ketapang", "Jambu-jambu", "Kedondong Hutan", "Sesendok",
+        "Mendarahan", "Bintangur", "Terap", "Bugis", "Bipa", "Duabanga", "Lancat", "Kenanga",
+        "Mempisang", "Sengon", "Surian", "Tenggayun", "Medang", "Jabon", "Pelawan", "Kayu Batu",
+        "Lara", "Simpur", "Lasi", "Mahang", "Gopasa"
     ],
-    "Kelompok Kayu Indah": ["CEMPAKA", "DAHU", "MELUR", "SINDUR"]
+    "Kelompok Kayu Indah": ["Cempaka", "Dahu", "Melur", "Sindur"]
 }
 
 # ------------------ UI INPUT ------------------
@@ -89,3 +89,4 @@ if st.button("🚀 Jalankan Simulasi"):
     wb.save(filename)
 
     st.download_button("⬇️ Unduh Excel", open(filename, "rb"), file_name=filename)
+
